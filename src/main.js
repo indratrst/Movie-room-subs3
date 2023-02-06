@@ -2,7 +2,7 @@ const main = () => {
 	$(".search-btn").on("click", () => {
 		$(".loader").toggleClass("visually-hidden");
 		$.ajax({
-			url: "http://www.omdbapi.com/?apikey=2bde9316&s=" + $(".input-keyword").val(),
+			url: "https://www.omdbapi.com/?apikey=2bde9316&s=" + $(".input-keyword").val(),
 			success: (results) => {
 				const movies = results.Search;
 				let cards = "";
@@ -22,7 +22,7 @@ const main = () => {
 				$(".modal-img").on("click", function () {
 					$(".loader").toggleClass("visually-hidden");
 					$.ajax({
-						url: "http://www.omdbapi.com/?apikey=2bde9316&i=" + $(this).data("imdbid") + "&plot=full",
+						url: "https://www.omdbapi.com/?apikey=2bde9316&i=" + $(this).data("imdbid") + "&plot=full",
 						success: (m) => {
 							$(".loader").toggleClass("visually-hidden");
 							const movie = movieModal(m);
