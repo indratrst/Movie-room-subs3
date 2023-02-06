@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Index</title>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="container my-3">
+				<nav class="navbar navbar-light bg-light custom-nav bg-transparent">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#" target="_self">
+							<svg width="47" height="31" viewBox="0 0 47 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15.4651 3.74804C8.91359 3.74804 3.58279 9.07866 3.58279 15.6307C3.58279 22.1813 8.91359 27.512 15.4651 27.512C22.0173 27.512 27.3467 22.1813 27.3467 15.6307C27.3467 9.07866 22.0173 3.74804 15.4651 3.74804V3.74804ZM15.4651 30.7921C7.10412 30.7921 0.302124 23.9907 0.302124 15.6307C0.302124 7.26933 7.10412 0.466664 15.4651 0.466664C23.8253 0.466664 30.628 7.26933 30.628 15.6307C30.628 23.9907 23.8253 30.7921 15.4651 30.7921Z"
+									fill="#4179A0"
+								/>
+								<path
+									d="M31.3707 3.74804C24.8187 3.74804 19.4885 9.07866 19.4885 15.6307C19.4885 22.1813 24.8187 27.512 31.3707 27.512C37.9227 27.512 43.252 22.1813 43.252 15.6307C43.252 9.07866 37.9227 3.74804 31.3707 3.74804ZM31.3707 30.7921C23.0094 30.7921 16.2079 23.9907 16.2079 15.6307C16.2079 7.26933 23.0094 0.466664 31.3707 0.466664C39.7307 0.466664 46.5334 7.26933 46.5334 15.6307C46.5334 23.9907 39.7307 30.7921 31.3707 30.7921Z"
+									fill="#4179A0"
+								/>
+							</svg>
+							<title-navbar></title-navbar>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- End header -->
+
+		<!-- Hero  -->
+		<div class="container">
+			<div class="row custom-section">
+				<div class="col-12 col-lg-4">
+					<h2>Movie Room</h2>
+					<h3>let me introduce you</h3>
+					<div class="garis"></div>
+					<p>Movie Room website pencarian data bersumber dari imdb untuk mendapatkan hasil silahkan masukan judul film yang ingin anda tampilkan</p>
+					<div class="container d-flex justify-content-center align-items-center">
+						<div class="searchbar">
+							<input class="search_input input-keyword" type="text" placeholder="Search..." />
+							<a href="#first" class="search_icon search-btn"
+								><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+									<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Hero -->
+
+		<!-- Show Movie -->
+		<div class="container first" id="first">
+			<div class="breaker pt-2">
+				<div class="line"></div>
+				<h2 class="text">Movie</h2>
+				<h2 class="text ps-5">Corner</h2>
+				<div class="line"></div>
+			</div>
+			<div class="row movie-container">
+				<div class="alert alert-info" role="alert">Masukan film yang anda ingin cari & akan muncul disini</div>
+			</div>
+		</div>
+		<!-- End Show Movie -->
+
+		<!--loader-->
+		<div class="loader visually-hidden fixed-top d-flex flex-column justify-content-center align-items-center w-100 vh-100" style="background-color: rgba(33, 37, 41, 0.5)">
+			<h2 class="mb-5">Loading</h2>
+			<div class="dot-spinner">
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+				<div class="dot-spinner__dot"></div>
+			</div>
+		</div>
+
+		<!-- modal start  -->
+		<div class="modal fade" id="movieModal" tabindex="-1" role="dialog" aria-labelledby="movieModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header d-flex"></div>
+					<div class="modal-body"></div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+		<!-- modal end  -->
+	</body>
+</html>
